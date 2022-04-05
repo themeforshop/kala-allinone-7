@@ -703,7 +703,7 @@ header{
 }
 .headerTheme-right .button {
 	font-size: 16px;
-	font-weight: 400;
+	font-weight: 500;
     text-transform: uppercase;
 	padding: 0px 17px;
 	border: 1px solid;
@@ -849,7 +849,7 @@ header{
 .bestUXTheme-layout .bestUXTheme-inner .button{
 	display: inline-block;
 	font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
     text-transform: uppercase;
     padding: 0px 25px;
 	margin-top: 30px;
