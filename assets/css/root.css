@@ -1,0 +1,35 @@
+:root {
+    --color_svg: #5CFFFF;
+    --font_family: 'Poppins';
+    --color_active: #1445C5;
+    --color_hover: #6d92d7;
+    --color-title: #000000;
+    --color_body: #000;
+    
+    --color_btn_text: #fff;
+    --color_btn_border: #1445C5;
+    --color_btn_bg: #1445C5;
+    
+    --color_btn_text1: #000;
+    --color_btn_border1: rgba(0, 0, 0, 0.05);
+    --color_btn_bg1: #fff;
+
+    --color_btn_text2: #000;
+    --color_btn_border2: #5CFFFF;
+    --color_btn_bg2: #5CFFFF;
+
+    --color_slick_dots_btn: #C1D4DE;
+    --color_slick_dots_btn_active: #000;
+
+    --color_topheader_text: #fff;
+    --color_topheader_bg: #2272dc;
+
+    --color_popup_text: #000;
+    --color_popup_text_hover: #2272dc;
+    --color_popup_bg: #f4f4f4;
+    --color_popup_bg: #fff;
+
+    --color_bestUXTheme_text: #fff;
+    --color_bestUXTheme_text_hover: #5CFFFF;
+    --color_bestUXTheme_border: #5CFFFF;
+}
