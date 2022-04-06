@@ -42,7 +42,7 @@ function filter() {
 }
 
 function stickyHeader() {
-    if ($(window).scrollTop() > 60) {
+    if ($(window).scrollTop() > 20) {
         if (!$('[data-header]').hasClass('affix')) {
             $('[data-header]').addClass('affix');
         }
@@ -256,7 +256,7 @@ $(document).on('ready', function() {
 });
 
 $(window).on('scroll', function() {
-    // stickyHeader();
+    stickyHeader();
     countHome();
     video();
 });
