@@ -303,7 +303,7 @@ figure figcaption{
 }
 figure figcaption a{	
 	font-weight: 600;
-	font-size: 13px;
+	font-size: 16px;
 	/* identical to box height */
 	text-align: center;
 	text-transform: capitalize;
@@ -316,16 +316,17 @@ figure figcaption a strong{
 	position: absolute;
 	top: -2px;
 	left: 26px;
+	z-index: 3;
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: center;
 	font-weight: 700;
-	font-size: 10px;
-	line-height: 15px;
+	font-size: 13px;
+	line-height: 16px;
 	text-align: center;
 
-	width: 28px;
-	height: 19px;
+	width: 30px;
+	height: 20px;
 	
 }
 figure figcaption a strong.v6{
@@ -1421,7 +1422,7 @@ ul.filter-select li a{
 	font-family: var(--font_family);
 	font-style: normal;
 	font-weight: 500;
-	font-size: 15px;
+	font-size: 16px;
 	line-height: 20px;
 	/* identical to box height */
 	text-transform: capitalize;
