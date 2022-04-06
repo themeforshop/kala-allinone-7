@@ -314,7 +314,7 @@ figure figcaption a{
 figure figcaption a strong{
 	color: #fff;
 	position: absolute;
-	top: -1px;
+	top: -2px;
 	left: 26px;
 	background-size: 100%;
 	background-repeat: no-repeat;
@@ -324,7 +324,7 @@ figure figcaption a strong{
 	line-height: 15px;
 	text-align: center;
 
-	width: 24px;
+	width: 28px;
 	height: 19px;
 	
 }
