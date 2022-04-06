@@ -309,6 +309,10 @@ figure figcaption a{
 	/* Text/Black */
 	color: var(--color_body);
 }
+figure figcaption a strong{
+	font-size: 14px;
+	color: var(--color_active);
+}
 @media screen and (max-width: 575px){
 	figure figcaption a{	
 		font-size: 12px;
