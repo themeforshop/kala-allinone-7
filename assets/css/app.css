@@ -778,14 +778,24 @@ header{
 	}	
 }
 .bestUXTheme-layout .bestUXTheme-inner{
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	right: 0;
+	bottom: 0;
+	 
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+.bestUXTheme-layout .bestUXTheme-inner .bestUXTheme-content{
 	width: 540px;
 	max-width: 50%;
 	padding-top: 90px;
 	padding-bottom: 55px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 	text-align: center;
 }	
 .bestUXTheme-layout .bestUXTheme-inner .caption-content{
@@ -914,7 +924,7 @@ header{
 	}	  
 }
 @media screen and (max-width: 575px){
-	.bestUXTheme-layout .bestUXTheme-inner{
+	.bestUXTheme-layout .bestUXTheme-inner .bestUXTheme-content{
 		max-width: 100%;
 		padding-left: 10px;
 		padding-right: 10px;
