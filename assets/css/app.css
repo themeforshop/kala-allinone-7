@@ -311,29 +311,28 @@ figure figcaption a{
 	color: var(--color_body);
 }
 
-figure figcaption a strong{
+figure figcaption a span{
 	color: #fff;
 	position: absolute;
-	top: -2px;
+	top: -9px;
 	left: 26px;
 	z-index: 3;
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: center;
 	font-weight: 700;
-	font-size: 13px;
-	line-height: 16px;
+	font-size: 16px;
+	line-height: 37px;
 	text-align: center;
-
-	width: 30px;
-	height: 20px;
-	
+	display: block;
+	width: 50px;
+	height: 41px;
 }
-figure figcaption a strong.v6{
-	background-image: url(../img/labelv6.png);
+figure figcaption a span.v6{
+	background-image: url(../img/labelv6.svg);
 }
-figure figcaption a strong.v7{
-	background-image: url(../img/labelv7.png);
+figure figcaption a span.v7{
+	background-image: url(../img/labelv7.svg);
 }
 @media screen and (max-width: 575px){
 	figure figcaption a{	
