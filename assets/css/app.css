@@ -1598,3 +1598,12 @@ ul.filter-select li#more:hover{
 .homeimage{
   display: block;
 }
+
+.linetext{
+	font-size: 12px;
+    color: #000;
+    position: relative;
+    top: -5px;
+    left: 0;
+    width: auto;
+}
