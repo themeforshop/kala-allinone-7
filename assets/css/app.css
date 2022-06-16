@@ -330,9 +330,11 @@ figure figcaption a span{
 }
 figure figcaption a span.v6{
 	background-image: url(../img/labelv6.svg);
+	display:none;
 }
 figure figcaption a span.v7{
 	background-image: url(../img/labelv7.svg);
+	display:none;
 }
 @media screen and (max-width: 575px){
 	figure figcaption a{	
@@ -1256,16 +1258,26 @@ header{
 .float-right-icon{
 	overflow: hidden;
     position: fixed;
-    right: 20px;
+    right: 10px;
     bottom: 75px;
     padding: 5px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	z-index: 3;
+}
+.float-right-icon .img-gif{
+	animation: zoom-gif 2s ease-out infinite;  
 }
 .float-right-icon #scroll-to-top {
     position: relative;
     -ms-transition: all 250ms ease;
     -webkit-transition: all 250ms ease;
     transition: all 250ms ease;
-    margin-left: auto;
+    margin-left: 0;
+	margin-top: 10px;
     padding: 0;
     text-align: center;
     background-color: #0054ff;
@@ -1291,7 +1303,7 @@ header{
 	animation: fadeInRight .6s ease both; 
 }
 .float-right-icon #scroll-to-top.off {
-	margin-right: -100px;	
+	margin-right: -200px;
 	animation: fadeInLeft .6s ease both; 
 }
 /* Heart beat animation */
@@ -1607,3 +1619,159 @@ ul.filter-select li#more:hover{
     left: 0;
     width: auto;
 }
+
+/*modal*/
+
+.jquery-modal .title{
+	color: #fff;
+	text-align: center;
+	display: inline-block;
+	position: relative;
+    margin: 0;
+	font-size: 20px;
+    line-height: 36px;
+	padding: 0px 15px;
+	font-weight: 600;
+	background-color: #042e90;
+}
+
+.jquery-modal .title:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 100%;
+	left: auto;
+	width: 0; 
+	height: 0; 
+	border-top: 36px solid transparent;
+	border-right: 21px solid #042e90;
+}
+.jquery-modal .title:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 100%;
+	left: auto;
+	width: 36px; 
+	height: 36px; 
+	background-color: #042e90;
+}
+.jquery-modal .modal{
+	max-width: 687px;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	text-align: center;
+	box-shadow: none;
+} 
+.jquery-modal .title + .box-value{
+	margin-top: 30px;
+}
+.jquery-modal .box-value{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+.jquery-modal .box-value > div{
+	text-align: center;
+	color: #fff;
+	border-radius: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 15px;
+}
+.jquery-modal .box-value:last-child{
+	margin-right: 0;
+}
+.jquery-modal .box-value:first-child{
+	margin-left: 0;
+}
+.jquery-modal .box-count{
+	font-size: 40px;
+	font-weight: 600;
+}
+
+.jquery-modal .box-text{
+	font-size: 16px;
+	font-weight: 600;
+}
+.jquery-modal .text-action{
+	padding: 0 20px;
+	height: 40px;
+	line-height: 38px;
+	border: 1px solid #fff;
+	color: #fff;
+	font-size: 16px;
+	text-transform: uppercase;
+	display: inline-block;
+	font-weight: 600;
+	margin-top: 30px;
+	transition: all 0.25s ease;
+}
+.jquery-modal .text-action:hover{
+	background-color: var(--color_active);
+	border-color: var(--color_active);
+}
+
+.jquery-modal .box-1{
+	background-color: #02e8ff;
+	color: var(--color_active) !important;
+}
+.jquery-modal .box-2{
+	background-color: #ff1b92;
+}
+.jquery-modal .box-3{
+	background-color: #e00120;
+}
+.jquery-modal.blocker{
+	z-index: 9;
+}
+@media screen and (min-width: 768px){
+	.jquery-modal .box-value > div{
+		min-width: 150px;
+	}
+}
+@media screen and (max-width: 767px){
+	.jquery-modal .title{
+		font-size: 16px;
+	}
+	.jquery-modal .box-count{
+		font-size: 30px;
+	}
+	.jquery-modal .text-action,
+	.jquery-modal .box-text{
+		font-size: 13px;
+	}
+	.jquery-modal .box-value > div{
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+}
+@media screen and (max-width: 575px){
+	.jquery-modal .modal{
+		padding-left: 15px;
+		padding-right: 15px;
+		max-width: 100%;
+		width: 100%;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.jquery-modal .box-count{
+		font-size: 20px;
+	}
+	.jquery-modal .title{
+		font-size: 10px;
+	}
+	.jquery-modal .title:before{
+		border-right-width: 5px;
+	}
+	.jquery-modal .title:after{
+		width: 20px;
+	}
+	.jquery-modal .box-value > div{
+		padding: 10px 12px;
+	}
+}
+
+/*End Eddmodal*/

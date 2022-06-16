@@ -7,7 +7,29 @@
  *
  * Copyright (c) 2019 Daniel Eden
  */
-
+ @-webkit-keyframes zoom-gif{
+    0% {
+        transform: scale(0.8, 0.8);
+        }
+        50% {
+        transform: scale(1.1, 1.1);
+        }
+        100% {
+        transform: scale(0.8, 0.8);
+        }
+ }
+ 
+ @keyframes zoom-gif{
+    0% {
+        transform: scale(0.8, 0.8);
+        }
+        50% {
+        transform: scale(1.1, 1.1);
+        }
+        100% {
+        transform: scale(0.8, 0.8);
+        }
+ }
 @-webkit-keyframes bounce {
     from,
   20%,
